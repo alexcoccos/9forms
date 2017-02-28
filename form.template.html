@@ -1,36 +1,4 @@
 <h1>Angular Form Validation</h1>
-<form id="myform" novalidate name="$parent.myform" ng-submit="inserisci($parent.user,myform)">
-	<div class="form-group">
-		<label>Nome</label>
-		<input class="form-control" type="text" name="firstname" placeholder="First Name" ng-model="$parent.user.firstname" ng-required="true"
-		    ng-minlength="3" />
-		<div ng-show="myform.firstname.$dirty">
-			<p class="error" ng-show="myform.firstname.$invalid"> Nome non valido</p>
-			<p class="error" ng-show="myform.firstname.$error.required"> Nome obbligatorio</p>
-		</div>
-	</div>
-
-	<div class="form-group">
-		<label>Cognome</label>
-		<input class="form-control" type="text" name="lastname" placeholder="Last Name" ng-model="$parent.user.lastname" ng-required="true"
-		    ng-minlength="3" />
-		<div ng-show="myform.lastname.$dirty">
-			<p class="error" ng-show="myform.lastname.$invalid"> Cognome non valido</p>
-			<p class="error" ng-show="myform.lastname.$error.required"> Cognome obbligatorio</p>
-		</div>
-	</div>
-
-	<div class="form-group">
-		<label>Email</label>
-		<input class="form-control" type="email" name="email" placeholder="Email" ng-model="$parent.user.email" ng-required="true"
-		/>
-		<div ng-show="myform.email.$dirty">
-			<p class="error" ng-show="myform.email.$error.email"> Email non valida</p>
-			<p class="error" ng-show="myform.email.$error.required"> Email obbligatorio</p>
-		</div>
-	</div>
-
-	<div>
-		<button class="btn btn-primary" ng-disabled="myform.$invalid" type="submit">Invia</button>
-	</div>
-</form>
+<!--CREARE UNA FORM PER INSERIRE NOME COGNOME ED EMAIL-->
+<!--VALIDARE LA FORM-->
+<!--SCRIVERE UNA FUNZIONE PER INSERIRE L'UTENTE NELLA LISTA UTENTI-->
