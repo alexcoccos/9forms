@@ -2,3 +2,27 @@
 <!--CREARE UNA FORM PER INSERIRE NOME COGNOME ED EMAIL-->
 <!--VALIDARE LA FORM-->
 <!--SCRIVERE UNA FUNZIONE PER INSERIRE L'UTENTE NELLA LISTA UTENTI-->
+<form name="miaform" novalidate>
+  <div class="form-group">
+    <label for="nome">Nome:</label>
+    <input type="nome" ng-model="$parent.user.nome" class="form-control" id="nome" ng-required="true">
+  </div>
+  <div class="form-group">
+    <label for="cognome">Cognome:</label>
+    <input type="cognome" ng-model="$parent.user.cognome" class="form-control" id="cognome" ng-required="true">
+  </div>
+  <div class="form-group">
+    <label for="email">Email address:</label>
+    <input type="email" ng-model="$parent.user.email" class="form-control" id="email" ng-required="true">
+  </div>
+  <div class="form-group">
+    <label for="pwd">Password:</label>
+    <input type="password"ng-model="$parent.user.password"  class="form-control" id="pwd" ng-required="true">
+  </div>
+  <div class="checkbox">
+    <label><input type="checkbox"> Remember me</label>
+  </div>
+  <button type="submit" class="btn btn-default" ng-disabled="miaform.$invalid">Salva</button>
+</form>
+
+<!-- non funzione la validazione della form se nn mettiamo un ng-model che si collega a tutti gli input precedenti-->
